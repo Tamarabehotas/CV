@@ -1,0 +1,213 @@
+
+:root{
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    --color-1: #82cbff;
+    --color-2: #3ec8ff;
+    --color-3: #c78b19;
+    --color-4: #a0d4ff;
+    --color-pagina: aliceblue;
+    --color-texto: black;
+    color: var(--color-texto);
+    --imagen1: url(../img/fondo.png);
+    --imagen2: url(../img/fondoOscuro.png)
+
+}
+
+html{
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+    background-size: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--color-pagina);
+    width: 80vw;
+    border-radius: 10px;
+    display: flexbox;
+    flex-direction: column;
+}
+
+/* header con barra de navegación */
+header {
+    background-color: var(--color-1);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.navbar {
+    align-content: space-evenly;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+.navbar a{
+    text-transform: uppercase;
+    color: var(--color-texto);
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding-top: 2%;
+}
+
+.navbar li a:hover{
+    transition: 2ms all;
+    color: var(--color-3);
+    text-decoration: underline;
+}
+
+header i {
+    color: var(--color-3);
+    padding: 10px;
+    margin-left: 7px;
+    font-size: 1.7rem;
+}
+
+header i:hover{
+    background-color: var(--color-4);
+    transform: scale(1.1);
+    transition: 1ms all;
+    border-radius: 50%;
+    }
+
+/* main*/
+#pdf {
+    position:fixed;
+    margin-left: 83%;
+    margin-top: 41%;
+    font-size: 2rem;
+    color: var(--color-3);
+}
+#pdf:hover {
+    transition: 1ms all;
+    transform: scale(1.4);
+    color: var(--color-2);
+}
+.tituloSeccion {
+    background-color: var(--color-1);
+    padding: 1%;
+    margin: 2% 0 2% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.tituloSeccion i{
+    font-size: 2rem;
+}
+
+.tituloSeccion i:hover{
+    transition: 1ms all;
+    transform: scale(1.4);
+    color: var(--color-pagina);
+    text-shadow: 2px 2px 2px grey;
+}
+
+#mostrarSM, #flechaAbajo, #flechaArriba {
+    display: none;
+}
+p{
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    margin: 3px;
+}
+
+p span{
+    text-decoration:underline;
+    font-weight: bold;
+}
+p a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+
+/* sobre mi */
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    padding: 0 3px 0 3px;
+}
+
+.sobreMi_datos { 
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreMi_Img{
+width: 75%;
+border-radius: 20%;
+}
+
+.sobreMi_texto {
+    width: 40%;
+    padding: 5px;
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.flexWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+#cuadro {
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    background-color: var(--color-4);
+    width: 100px;
+    height: auto;
+}
+
+#cuadro:hover {
+    transition: 2ms all;
+    transform: scale(1.1);
+    background-color: var(--color-2);
+    color: var(--color-pagina);
+}
+
+footer {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-1);
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: dashed;
+    text-shadow: 2px 2px 2px var(--color-2);
+}
